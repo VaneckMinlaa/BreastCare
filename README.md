@@ -1,50 +1,94 @@
-# Welcome to your Expo app 👋
+# BreastCare — Application mobile (Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Projet mobile développé avec Expo / React Native. Ce README remplace le modèle initial et fournit des instructions complètes en français pour le développement, le test et le déploiement.
 
-## Get started
+---
 
-1. Install dependencies
+## Objectif
 
-   ```bash
-   npm install
-   ```
+BreastCare est une application mobile destinée au suivi et à la sensibilisation autour de la santé mammaire. Elle vise à fournir des ressources, rappels et outils d’auto‑examen aux utilisatrices.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Stack
 
-In the output, you'll find options to open the app in a
+- Framework : Expo (React Native)
+- Langage : JavaScript / TypeScript
+- Dépendances : Expo SDK, bibliothèques UI et utilitaires (voir package.json)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Prérequis
 
-## Get a fresh project
+- Node.js 18+
+- npm ou yarn
+- Expo CLI
+- Android Studio / Xcode (pour émulateurs si nécessaire)
 
-When you're ready, run:
+---
+
+## Installation et démarrage
+
+1. Installer les dépendances :
 
 ```bash
-npm run reset-project
+npm install
+# ou
+pnpm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Lancer le serveur Metro / Expo :
 
-## Learn more
+```bash
+npx expo start
+# ou
+npm run start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Ouvrir sur un appareil via Expo Go (scanner le QR) ou lancer un émulateur.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## Tests
 
-Join our community of developers creating universal apps.
+- Tests unitaires : `npm test` (selon configuration du projet)
+- E2E : config possible avec Detox / Appium si configuré
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## Build et publication
+
+- Pour un build natif (dev client / production), utilisez EAS ou `expo prebuild` puis `gradlew / xcodebuild`.
+- Consultez la documentation d’Expo pour la signature et la publication sur Play Store / App Store.
+
+---
+
+## Structure du dépôt
+
+```
+BreastCare/
+├── app/            # Code source Expo (ou app/ selon starter)
+├── app-example/    # Starter template fourni
+├── package.json
+└── README.md
+```
+
+---
+
+## Contribution
+
+- Fork → branche feature/...
+- Respecter les linters et tests
+- Ouvrir une issue pour discuter d’une fonctionnalité majeure
+
+---
+
+## Licence
+
+Ajoutez un fichier LICENSE si vous souhaitez préciser la licence (ex. MIT).
+
+---
+
+## Contact
+
+Ouvrez une issue pour toute question ou demande d’aide.
